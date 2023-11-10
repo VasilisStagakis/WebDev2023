@@ -1,0 +1,122 @@
+footer {
+    color:white;
+    background-color: black;
+    width: 100%;
+    height: 32em;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+#devs {
+    text-align: center;
+    font-size: 3.3em;
+}
+
+.social-media {
+    margin: 2em;
+}
+
+.social-media img {
+    display: block;
+    left: 15;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.contact-details {
+    margin: 1.5em;
+}
+
+.contact-details img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.payment-methods {
+    display: block;
+    margin: 1.5em;
+}
+
+.suv-item > img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0.6em;
+}
+
+.motocross-item, .suv-item {
+    font-size: 1.3em;
+}
+
+.category-item {
+    font-size: 1.7em;
+    padding: 1.2em;
+    margin: 0;
+}
+
+.category-item > img{
+    width: auto;
+    height: 800px;
+    border: solid black;
+}
+
+.motocross-item > img {
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0.6em;
+}
+
+.dev-desc > h3 {
+    font-size: 2.5em;
+}
+
+.dev-desc > p {
+    font-size: 1.5em;
+}
+
+.payment-methods > ul, .social-media > ul, .category-item > ul {
+    list-style-type: none;
+}
+
+.dev-desc {
+    padding: 3em;
+    border: solid green;
+    margin: 5em;
+    background-color:wheat;
+}
+
+.dev-desc > img {
+    border: solid black;
+}
+
+#category-1 {
+    background-color: azure;
+}
+
+#category-2 {
+    background-color: azure;
+}
+
+#category-3 {
+    background-color: gray;
+}
+
+#category-4 {
+    background-color: aquamarine;
+}
+
+#category-5 {
+    background-color: azure;
+}
+
+#category-6 {
+    background-color: azure;
+}
