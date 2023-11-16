@@ -59,7 +59,7 @@ body {
 
 
 /* Changes color of email link when mouse hovers over it */
-.contact-details a:hover {
+.contact-details a:hover:nth-child(2n) {
     color:chocolate;
 }
 
