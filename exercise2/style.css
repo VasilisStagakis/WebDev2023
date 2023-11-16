@@ -1,49 +1,75 @@
+/* Sets the background color and text color of the footer. Also positions the footer at the bottom and makes it cover all the page width */
 footer {
     color:white;
-    background-color: black;
+    background-color: rgb(17, 16, 16);
     width: 100%;
-    height: 32em;
     position: absolute;
     bottom:0;
     left: 0;
 }
 
+/* Resets some default margin and padding for the body */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Changes the padding for suv and motocross main element */
+.products-list {
+    padding: 3em;
+}
+
+/* Aligns the copyright text to the center*/
 .copyright {
     text-align: center;
 }
 
+/* Center and changes the font size of the "Our Developers" text */
 #devs {
     text-align: center;
     font-size: 3.3em;
 }
 
+/* Changes the margin of the social media section */
 .social-media {
     margin: 2em;
 }
 
+/* Changes image dimensions and box model of the social media images  */
 .social-media img {
     display: block;
-    left: 15;
     width: 30px;
     height: 30px;
-    
+    margin: 0.8em;
 }
 
+/* Changes the margin of thecontact deatails section */
 .contact-details {
-    margin: 1.5em;
+    margin: 2em;
 }
+
+/* Changes image dimensions of email image  */
 
 .contact-details img{
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
+
+/* Changes color of email link when mouse hovers over it */
+.contact-details a:hover {
+    color:chocolate;
+}
+
+/* Changes the margin of the payment methods section */
 .payment-methods {
     display: block;
-    margin: 1.5em;
+    margin: 2em;
 }
 
+/* Changes image dimensions, margin and border radius of suv images  */
 .suv-item > img {
     width: 500px;
     height: 300px;
@@ -51,22 +77,36 @@ footer {
     margin: 0.6em;
 }
 
+/* Changes font size of the text, box model and border in motocross and suv products. Also adds shadows */
 .motocross-item, .suv-item {
     font-size: 1.3em;
+    margin: 2em;
+    padding: 2em;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 0 5px 10px 5px gray;
 }
 
+/* Changes the box model and font size of all categories */
 .category-item {
     font-size: 1.7em;
     padding: 1.2em;
     margin: 0;
+    width: 100%;
+
 }
 
+
+/* Changes the height of the images of all categories and puts a black border around them */
 .category-item > img{
     width: auto;
     height: 800px;
     border: solid black;
 }
 
+/* Changes image dimensions, margin and border radius of motocross images  */
 .motocross-item > img {
     width: auto;
     height: 300px;
@@ -74,18 +114,23 @@ footer {
     margin: 0.6em;
 }
 
+/* Changes the font size of the name of the developers */
 .dev-desc > h3 {
     font-size: 2.5em;
 }
 
+/* Changes the font size of the description of the developers */
 .dev-desc > p {
     font-size: 1.5em;
 }
 
+/* makes the bullets in the list of images dissapear */
 .payment-methods > ul, .social-media > ul, .category-item > ul {
     list-style-type: none;
 }
 
+
+/* Changes the box model and background color of the section of each developer */
 .dev-desc {
     padding: 3em;
     border: solid green;
@@ -93,30 +138,37 @@ footer {
     background-color:wheat;
 }
 
+/* Puts a black border around the image of each developer */
 .dev-desc > img {
     border: solid black;
 }
 
+/* Changes the background color of the certain category */
 #category-1 {
-    background-color: azure;
+    background-color: rgb(130, 11, 11);
 }
 
+/* Changes the background color of the certain category */
 #category-2 {
-    background-color: azure;
+    background-color: rgb(100, 195, 131);
 }
 
+/* Changes the background color of the certain category */
 #category-3 {
     background-color: gray;
 }
 
+/* Changes the background color of the certain category */
 #category-4 {
-    background-color: aquamarine;
+    background-color: rgb(26, 76, 85);
 }
 
+/* Changes the background color of the certain category */
 #category-5 {
-    background-color: azure;
+    background-color: rgb(170, 193, 20);
 }
 
+/* Changes the background color of the certain category */
 #category-6 {
-    background-color: azure;
+    background-color: rgb(4, 210, 210);
 }
