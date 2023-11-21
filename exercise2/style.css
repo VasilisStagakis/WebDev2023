@@ -29,6 +29,7 @@ body {
 #devs {
     text-align: center;
     font-size: 3.3em;
+    color: gold;
 }
 
 /* Changes the margin of the social media section */
@@ -87,6 +88,7 @@ body {
     border-radius: 5px;
     border-color: black;
     box-shadow: 0 5px 10px 5px gray;
+    font-family: sans-serif;
 }
 
 /* Changes the box model and font size of all categories */
@@ -95,15 +97,39 @@ body {
     padding: 1.2em;
     margin: 0;
     width: 100%;
-
+    font-family: sans-serif;
+    color: white;
 }
 
 
-/* Changes the height of the images of all categories and puts a black border around them */
+/* Changes the height of the images of all categories and puts a black border around them. Also sets the transition delay */
 .category-item > img{
     width: auto;
     height: 800px;
     border: solid black;
+    transition: 0.7s;
+}
+
+/* Sets the opacity to 0,7 when the mouse hovers over a category image */
+.category-item >  img:hover {
+    opacity: 0.7;
+}
+ 
+/* Sets the transition delay based on the color change */
+.category-item h2,li {
+    transition: color 0.7s;
+}
+
+/* Sets the color to be changed after hovering over the h2 and li items */
+.category-item h2:hover,li:hover {
+    color: #0A1828;
+}
+
+/* Removes the text decoration and default link color */
+.category-item a:link, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+   
 }
 
 /* Changes image dimensions, margin and border radius of motocross images  */
@@ -133,42 +159,100 @@ body {
 /* Changes the box model and background color of the section of each developer */
 .dev-desc {
     padding: 3em;
-    border: solid green;
+    border: solid rgb(4, 99, 4);
     margin: 5em;
-    background-color:wheat;
+    background-color:rgb(16, 16, 39);
+    font-family: sans-serif;
+    box-shadow: 5px 5px 10px 10px greenyellow ;
+    color: #869ba9;
 }
 
 /* Puts a black border around the image of each developer */
-.dev-desc > img {
+.dev-desc >  img {
     border: solid black;
+    float: left;
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+/* Sets the height if the email image */
+.dev-desc address img {
+    height: 50px;
+}
+
+
+/* Sets the font size for the emial link */
+.dev-desc a {
+    font-size: 1.7em;
+}
+
+/* Sets the color when the mouse hovers over the email link */
+.dev-desc a:hover {
+    color: chocolate;
+}
+
+/* Sets the color for the heading and makes the heading stay on the left side even though the image has a float:left property */
+.dev-desc h3 {
+    color: goldenrod;
+    clear: left;
+}
+
+/* Sets the paragraph text font size */
+.dev-desc p {
+    font-size: 30px;
+}
+
+
+/* Sets an animetion when the mouse hovers over the email image */
+.dev-desc address img:hover {
+    animation: shake 0.3s linear;
+}
+
+/* Sets up the shake animation */
+@keyframes shake {
+    33%{
+        transform: rotate(10deg);
+    }
+
+    66%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(10deg);
+    }
 }
 
 /* Changes the background color of the certain category */
 #category-1 {
-    background-color: rgb(130, 11, 11);
+    background-color: #005B41;
 }
 
 /* Changes the background color of the certain category */
 #category-2 {
-    background-color: rgb(100, 195, 131);
+    background-color: #008170;
 }
 
 /* Changes the background color of the certain category */
 #category-3 {
-    background-color: gray;
+    background-color:#183D3D ;
 }
 
 /* Changes the background color of the certain category */
 #category-4 {
-    background-color: rgb(26, 76, 85);
+    background-color: #5C8374;
 }
 
 /* Changes the background color of the certain category */
 #category-5 {
-    background-color: rgb(170, 193, 20);
+    background-color:#93B1A6;
 }
 
 /* Changes the background color of the certain category */
 #category-6 {
-    background-color: rgb(4, 210, 210);
+    background-color: #232D3F;
+}
+
+#about-us {
+    background-color: #0A1828 ;
 }
