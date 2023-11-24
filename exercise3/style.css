@@ -90,7 +90,8 @@ body {
     border-color: black;
     box-shadow: 0 5px 10px 5px gray;
     font-family: sans-serif;
-    background-color: white ;
+    background-color: white;
+    width: 60%;
 }
 
 /* Sets up the box model and style of the button in motocross and suv listings*/
@@ -352,4 +353,24 @@ body {
 /* Sets the style for the ad*/
 .motocross-item p:nth-of-type(4), .suv-item p:nth-of-type(4) {
     color: gray;
+}
+
+
+.dev-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dev-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.products-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
 }
