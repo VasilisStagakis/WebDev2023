@@ -190,6 +190,11 @@ body {
     list-style-type: none;
 }
 
+/* Overwrites the inherited property where the cursor was a pointer */
+.payment-methods li {
+    cursor: auto;
+}
+
 
 /* Changes the box model and background color of the section of each developer */
 .dev-desc {

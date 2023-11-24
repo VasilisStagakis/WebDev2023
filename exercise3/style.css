@@ -3,9 +3,21 @@ footer {
     color:white;
     background-color: rgb(17, 16, 16);
     width: 100%;
-    position: absolute;
     bottom:0;
     left: 0;
+    grid-row: 3;
+}
+
+head, main, footer {
+    padding: auto;
+}
+
+header {
+    grid-row: 1; /* Βάζουμε το header στην πρώτη γραμμή */
+}
+
+main {
+    grid-row: 2; /* Το κεντρικό περιεχόμενο στη δεύτερη γραμμή */
 }
 
 /* Resets some default margin and padding for the body */
@@ -13,6 +25,11 @@ footer {
 body {
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Ορίζουμε τρεις γραμμές: μια για το header, μια για το main content, και μια για το footer */
+    grid-template-columns: auto; /* Έχουμε μία στήλη για το κεντρικό περιεχόμενο */
+    min-height: 100vh;
+    position: relative;
 }
 
 /* Changes the padding for suv and motocross main element */
@@ -69,6 +86,11 @@ body {
 .payment-methods {
     display: block;
     margin: 2em;
+}
+
+/* Overwrites the inherited property where the cursor was a pointer */
+.payment-methods li {
+    cursor: auto;
 }
 
 /* Changes image dimensions, margin and border radius of suv images  */
@@ -373,4 +395,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content:center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content:flex-start;
 }
