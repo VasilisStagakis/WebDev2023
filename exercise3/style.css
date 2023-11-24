@@ -8,14 +8,17 @@ footer {
     grid-row: 3;
 }
 
-head, main, footer {
+/* Sets the padding of the header,main and footer elements to auto */
+header, main, footer {
     padding: auto;
 }
 
+/* Sets the header element at the first row of the grid */
 header {
-    grid-row: 1; /* Βάζουμε το header στην πρώτη γραμμή */
+    grid-row: 1; 
 }
 
+/* Sets the main element at the second row of the grid */
 main {
     grid-row: 2; /* Το κεντρικό περιεχόμενο στη δεύτερη γραμμή */
 }
@@ -26,8 +29,8 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: auto 1fr auto; /* Ορίζουμε τρεις γραμμές: μια για το header, μια για το main content, και μια για το footer */
-    grid-template-columns: auto; /* Έχουμε μία στήλη για το κεντρικό περιεχόμενο */
+    grid-template-rows: auto 1fr auto; /* Three row are set up: one for header, one for main and one for footer*/
+    grid-template-columns: auto; /* There's one row */
     min-height: 100vh;
     position: relative;
 }
@@ -58,21 +61,25 @@ body {
     grid-template-rows: auto auto;
 }
 
+/* Adjust the item position in the grid*/
 .social-media h3 {
     grid-column: 2/4    ;
     grid-row: 1/2;
 }
 
+/* Adjust the item position in the grid*/
 #social-1 {
     grid-row: 2/3;
     grid-column: 1/2;
 }
 
+/* Adjust the item position in the grid*/
 #social-2 {
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
+/* Adjust the item position in the grid*/
 #social-3 {
     grid-row: 2/3;
     grid-column: 3/4;
@@ -95,7 +102,6 @@ body {
 }
 
 /* Changes image dimensions of email image  */
-
 .contact-details img{
     display: block;
     width: 40px;
@@ -117,29 +123,34 @@ body {
     justify-content: space-evenly;
 }
 
+/* Adjust the item position in the grid*/
 .payment-methods h3 {
     grid-row: 1/2;
     grid-column: 1/5
 }
 
+/* Adjust the item position in the grid*/
 #payment-1 {
     margin-right: 0.3em;
     grid-row: 2/3;
     grid-column: 1/2;
 }
 
+/* Adjust the item position in the grid*/
 #payment-2 {
     margin-right: 0.3em;
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
+/* Adjust the item position in the grid*/
 #payment-3 {
     margin-right: 0.3em;
     grid-row: 2/3;
     grid-column: 3/4;
 }
 
+/* Adjust the item position in the grid*/
 #payment-4 {
     margin-right: 0.3em;
     grid-row: 2/3;
@@ -435,19 +446,21 @@ body {
     color: gray;
 }
 
-
+/* Adjusts the layout of the developer email image and link elements using flex box */
 .dev-email {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+/* Adjusts the layout of the developer cards using flex box */
 .dev-flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+/* Adjusts the layout of the suv and motocross product lists using flex box */
 .products-flex-container {
     display: flex;
     flex-direction: column;
@@ -455,6 +468,7 @@ body {
     justify-content:center;
 }
 
+/* Adjusts the layout of the footer element using flex box */
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -462,6 +476,7 @@ body {
     justify-content:flex-start;
 }
 
+/* Adjusts the layout of the adress element using flex box */
 .adress-flex-container {
     display: flex;
     flex-direction: row;
