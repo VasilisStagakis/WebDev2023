@@ -82,7 +82,7 @@ body {
 /* Changes font size of the text, box model and border in motocross and suv products. Also adds shadows */
 .motocross-item, .suv-item {
     font-size: 1.3em;
-    margin: 2em;
+    margin: 5em;
     padding: 2em;
     border-style: solid;
     border-width: medium;
@@ -93,6 +93,7 @@ body {
     background-color: white ;
 }
 
+/* Sets up the box model and style of the button in motocross and suv listings*/
 .motocross-item > button,.suv-item > button {
     background-color: whitesmoke;
     padding: 15px 30px;
@@ -104,9 +105,22 @@ body {
     cursor: pointer;
 }
 
+/* Sets up the behaviour of suv and motocross buttons when clicked. Specifically it sets the shadow and going down by 4 pixels on the Y axis*/
+
 .motocross-item > button:active,.suv-item > button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+/* Sets the font family and size of the paragraphs inside motocross-item class*/
+.motocross-item p {
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+/* Changes the font sixe of the product title of suvs and motocrosses */
+.motocross-item h3, .suv-item h3 {
+    font-size: xx-large;
 }
 
 /* Changes the box model and font size of all categories */
@@ -195,9 +209,10 @@ body {
     margin-bottom: 2em;
 }
 
-/* Sets the height if the email image */
+/* Sets the height and right margin of the email image */
 .dev-desc address img {
     height: 50px;
+    margin-right: 0.5em;
 }
 
 
@@ -331,4 +346,9 @@ body {
 /* Sets up the opacity when the mouse hovers over the dots */
 .slider-nav a:hover {
     opacity: 1;
+}
+
+/* Sets the style for the ad*/
+.motocross-item p:nth-of-type(4), .suv-item p:nth-of-type(4) {
+    color: gray;
 }
