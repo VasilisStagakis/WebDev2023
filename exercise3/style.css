@@ -20,11 +20,6 @@ footer {
     box-sizing: border-box;
 }
 
-/* Sets the padding of the header,main and footer elements to auto */
-header, main, footer {
-    padding: auto;
-}
-
 /* Sets the header element at the first row of the grid */
 header {
     grid-row: 1; 
