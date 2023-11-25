@@ -1,3 +1,9 @@
+/* Saves some colors into variables*/
+:root {
+    --dark_blue: #0A1828;
+    --blue-purple:rgb(16, 16, 39);
+}
+
 /* Sets the background color and text color of the footer. Also positions the footer at the bottom and makes it cover all the page width */
 footer {
     color:white;
@@ -6,6 +12,12 @@ footer {
     bottom:0;
     left: 0;
     grid-row: 3;
+    width: 100%;
+}
+
+/* Sets the border sizing of all elements to border box */
+* {
+    box-sizing: border-box;
 }
 
 /* Sets the padding of the header,main and footer elements to auto */
@@ -21,6 +33,8 @@ header {
 /* Sets the main element at the second row of the grid */
 main {
     grid-row: 2; /* Το κεντρικό περιεχόμενο στη δεύτερη γραμμή */
+    width: 100%;
+    height: 100%;
 }
 
 /* Resets some default margin and padding for the body */
@@ -223,6 +237,7 @@ body {
     width: 100%;
     font-family: sans-serif;
     color: white;
+    border: solid gray;
 }
 
 
@@ -288,7 +303,7 @@ body {
     padding: 3em;
     border: solid rgb(4, 99, 4);
     margin: 5em;
-    background-color:rgb(16, 16, 39);
+    background-color:var(--blue-purple);
     font-family: sans-serif;
     box-shadow: 5px 5px 10px 10px greenyellow ;
     color: #869ba9;
@@ -382,7 +397,7 @@ body {
 }
 
 #about-us {
-    background-color: #0A1828 ;
+    background-color: var(--dark_blue) ;
 }
 
 /* Sets up the container padding */
@@ -481,4 +496,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+/* Adjusts the grid container for the categories pages */
+.categories-container {
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    height: 100%;
 }
