@@ -52,7 +52,7 @@ body {
 /* Changes the padding for suv and motocross main element */
 .products-list {
     padding: 3em;
-    background-color: whitesmoke;
+    background-color: var(--dark_blue);
 }
 
 /* Aligns the copyright text to the center*/
