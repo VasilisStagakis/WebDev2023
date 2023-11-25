@@ -63,6 +63,12 @@ body {
     min-height: 100vh;
     position: relative;
     font-family: 'Nunito Sans',sans-serif;
+    
+}
+
+/* Makes the scrolling behavior smooth */
+html {
+    scroll-behavior: smooth;
 }
 
 
