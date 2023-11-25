@@ -1,3 +1,5 @@
+/*------------------------------------------------------------- Common CSS rules ------------------------------------------------------------------------------------*/
+
 /* Sets the background color and text color of the footer. Also positions the footer at the bottom and makes it cover all the page width */
 footer {
     color:white;
@@ -14,6 +16,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+/*------------------------------------------------------------- Komnas Kafasis CSS rules ------------------------------------------------------------------------------------*/
+
 
 /* Changes the padding for suv and motocross main element */
 .products-list {
@@ -358,3 +364,6 @@ body {
 .motocross-item p:nth-of-type(4), .suv-item p:nth-of-type(4) {
     color: gray;
 }
+
+
+/*------------------------------------------------------------- Vasilis Stagakis CSS rules ------------------------------------------------------------------------------------*/
