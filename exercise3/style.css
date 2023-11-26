@@ -210,7 +210,7 @@ html {
 }
 
 /* Changes font size of the text, box model and border in motocross and suv products. Also adds shadows */
-.motocross-item, .suv-item {
+.motocross-item, .suv-item{
     font-size: 1.3em;
     margin: 5em;
     padding: 2em;
@@ -227,7 +227,7 @@ html {
 }
 
 /* Sets up the box model and style of the button in motocross and suv listings*/
-.motocross-item > button,.suv-item > button {
+.motocross-item > button,.suv-item > button, .suv-item form button {
     background-color: whitesmoke;
     padding: 15px 30px;
     font-size: medium;
@@ -241,7 +241,7 @@ html {
 
 /* Sets up the behaviour of suv and motocross buttons when clicked. Specifically it sets the shadow and going down by 4 pixels on the Y axis*/
 
-.motocross-item > button:active,.suv-item > button:active {
+.motocross-item > button:active,.suv-item > button:active, .suv-item form button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }

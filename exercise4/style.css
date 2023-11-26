@@ -249,7 +249,7 @@ img {
 }
 
 /* Sets up the box model and style of the button in motocross and suv listings*/
-.motocross-item > button,.suv-item > button {
+.motocross-item > button,.suv-item > button, .suv-item form button {
     background-color: whitesmoke;
     padding: 15px 30px;
     font-size: medium;
@@ -263,7 +263,7 @@ img {
 
 /* Sets up the behaviour of suv and motocross buttons when clicked. Specifically it sets the shadow and going down by 4 pixels on the Y axis*/
 
-.motocross-item > button:active,.suv-item > button:active {
+.motocross-item > button:active,.suv-item > button:active, .suv-item form button:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -703,13 +703,13 @@ img {
         font-size:x-small;
     }
 
-    .motocross-item >button , .suv-item > button {
+    .motocross-item >button , .suv-item > button, .suv-item form button {
         font-size: 1em;
         padding: 5px 10px;
         box-shadow: 0 5px #999;
     }
 
-    .motocross-item > button:active,.suv-item > button:active {
+    .motocross-item > button:active,.suv-item > button:active, .suv-item form button:active {
         box-shadow: 0 3px #666;
         transform: translateY(2px);
     }
@@ -870,13 +870,13 @@ img {
         font-size:medium;
     }
 
-    .motocross-item >button , .suv-item > button {
+    .motocross-item >button , .suv-item > button, .suv-item form button {
         font-size: 1em;
         padding: 5px 10px;
         box-shadow: 0 5px #999;
     }
 
-    .motocross-item > button:active,.suv-item > button:active {
+    .motocross-item > button:active,.suv-item > button:active, .suv-item form button:active {
         box-shadow: 0 3px #666;
         transform: translateY(2px);
     }
