@@ -2,15 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="product categories">
-        <meta name="keywords" content="products, categories,cars,bikes,boats,bicycles,commercial,tractors,builders,hobby">
-        <meta name="author" content="Komnas Kafasis">
+        <meta name="description" content="Contact form">
+        <meta name="keywords" content="contact,reach out">
+        <meta name="author" content="Vasilis Stagakis">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us!</title>
         <link rel="icon" type="image/x-icon" href="../exercise5/images/logos/business-logo.jpg">
         <link rel="stylesheet" href="style/style.css">
-        <title>Categories</title>
     </head>
-
     <body>
         <header>
             <!-- Website Navigation -->
@@ -29,95 +28,35 @@
                 </div>
             </nav>
         </header>
-        
-        <main class="categories-container">
+        <main>
+            <!-- Contact Section -->
+            <section id="contact-main">
+                <h2>Contact Us</h2>
+                <img src="../exercise5/images/form/contact.png" alt="contact img">
+                <form method="POST" action="/problem_form"> 
+                    <fieldset>
+                        <legend>Reach Out!</legend>
 
-            <section id="category-1" class="category-item">
-                <img src="../exercise5/images/categories/car-3.png" alt="car image">
-                <h2>Cars</h2>
-                <ul>
-                    <li><a href="suv.html">SUV</a></li>
-                    <li>Hatchback</li>
-                    <li>Coupe</li>
-                    <li>Sedan</li>
-                    <li>Limousine</li>
-                </ul>
+                        <label for="add"><b>Enter the Add Number</b></label>
+                        <input type="text" id="add" name="add_number" pattern="[a-zA-Z]{3}-[0-9]{3}" title="Please enter a code in the format 'XXX-000'" placeholder="Enter the add number.." required>
+
+                        <label for="text"><b>What is it you are intrested in</b></label>
+                        <textarea id="text" name="problem" placeholder="Describe the issue.."></textarea>
+
+                        <label for="name"><b>Your Name</b></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name.." required>
+                        
+                        <label for="phone"><b>Enter your Phone Number</b></label>
+                        <input type="text" id="phone" name="phone_number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" placeholder="Enter your phone number.." required>
+                        
+                        <label for="mail"><b>Enter your E-mail</b></label>
+                        <input type="email" id="mail" autocomplete="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="please enter a valid email" placeholder="Enter your email.." required>
+
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </section>
-
-            <section id="category-2" class="category-item">
-                <img src="../exercise5/images/categories/motorcycle-3.jpg" alt="motorcycle image">
-                <h2>Bikes</h2>
-                <ul>
-                    <li>Cafe Racer</li>
-                    <li>Chopper</li>
-                    <li>Four Wheelers</li>
-                    <li>Tricycles</li>
-                    <li><a href="motocross.html">Motocross</a></li>
-                    <li>Scooter</li>
-                    <li>Sport Touring</li>
-                </ul>
-            </section>
-
-            <section id="category-3" class="category-item">
-                <img src="../exercise5/images/categories/boat-4.jpg" alt="boat image">
-                <h2>Boats</h2>
-                <ul>
-                    <li>Fishing boats</li>
-                    <li>Yatchs</li>
-                    <li>Sail boats</li>
-                    <li>Passenger boats</li>
-                    <li>Sport boats</li>
-                    <li>Catamaran</li>
-                    <li>Cabin boats</li>
-                </ul>
-            </section>
-
-            <section id="category-4" class="category-item">
-                <img src="../exercise5/images/categories/bike-3.jpg" alt="bike image">
-                <h2>Bicycles</h2>
-                <ul>
-                    <li>Bmx</li>
-                    <li>Fitness</li>
-                    <li>Mountain</li>
-                    <li>Trekking</li>
-                    <li>Children Bicycles</li>
-                    <li>Monocycle</li>
-                    <li>Ekectric bikes</li>
-                </ul>
-            </section>
-
-            <section id="category-5" class="category-item">
-                <img src="../exercise5/images/categories/forklift.jpg" alt="forklift image">
-                <h2>Commercial - Tractors - Builders</h2>
-                <ul>
-                    <li>Vans</li>
-                    <li>Trucks</li>
-                    <li>Buses</li>
-                    <li>Builders</li>
-                    <li>Semitrucks</li>
-                    <li>Semitrailers</li>
-                    <li>Tractors</li>
-                    <li>Forklifts</li>
-                    <li>Trailers</li>
-                    <li>Taxis</li>
-                </ul>
-            </section>
-
-            <section id="category-6" class="category-item">
-                <img src="../exercise5/images/categories/snowmobile-3.jpg" alt="snowmobile image">
-                <h2>Hobby</h2>
-                <ul>
-                    <li>Radio Controlled</li>
-                    <li>Go Karts</li>
-                    <li>Water Sports</li>
-                    <li>Snow Sports</li>
-                    <li>Air Sports</li>
-                </ul>
-            </section>
-
-
         </main>
-
         <footer>
 
             <div class="footer-container">

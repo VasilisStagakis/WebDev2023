@@ -1,0 +1,579 @@
+/*------------------------------------------------------------- Common CSS rules ------------------------------------------------------------------------------------*/
+
+/* Saves some colors into variables*/
+:root {
+    --dark_blue: #0A1828;
+    --blue-purple:rgb(16, 16, 39);
+}
+
+
+/* Sets the background color and text color of the footer. Also positions the footer at the bottom and makes it cover all the page width */
+footer {
+    color:white;
+    background-color: rgb(17, 16, 16);
+    width: 100%;
+    bottom:0;
+    left: 0;
+}
+
+/* Resets some default margin and padding for the body */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Makes the scrolling behavior smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*------------------------------------------------------------- Komnas Kafasis CSS rules ------------------------------------------------------------------------------------*/
+
+
+/* Changes the padding for suv and motocross main element */
+.products-list {
+    padding: 3em;
+    background-color: var(--dark_blue);
+}
+
+/* Aligns the copyright text to the center*/
+.copyright {
+    text-align: center;
+}
+
+/* Center and changes the font size of the "Our Developers" text */
+#devs {
+    text-align: center;
+    font-size: 3.3em;
+    color: gold;
+}
+
+/* Changes the margin of the social media section */
+.social-media {
+    margin: 2em;
+}
+
+/* Changes image dimensions and box model of the social media images  */
+.social-media img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0.8em;
+}
+
+/* Changes the margin of thecontact deatails section */
+.contact-details {
+    margin: 2em;
+}
+
+/* Changes image dimensions of email image  */
+
+.contact-details img{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Changes color of email link when mouse hovers over it */
+.contact-details a:hover:nth-child(2n) {
+    color:chocolate;
+}
+
+/* Changes the margin of the payment methods section */
+.payment-methods {
+    display: block;
+    margin: 2em;
+}
+
+/* Changes image dimensions, margin and border radius of suv images  */
+.suv-item > img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0.6em;
+}
+
+/* Changes font size of the text, box model and border in motocross and suv products. Also adds shadows */
+.motocross-item, .suv-item {
+    font-size: 1.3em;
+    margin: 5em;
+    padding: 2em;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 0 5px 10px 5px gray;
+    font-family: sans-serif;
+    background-color: white ;
+}
+
+/* Sets up the box model and style of the button in motocross and suv listings*/
+.motocross-item > button,.suv-item > button, .suv-item form button {
+    background-color: whitesmoke;
+    padding: 15px 30px;
+    font-size: medium;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sets up the behaviour of suv and motocross buttons when clicked. Specifically it sets the shadow and going down by 4 pixels on the Y axis*/
+
+.motocross-item > button:active,.suv-item > button:active, .suv-item form button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Sets the font family and size of the paragraphs inside motocross-item class*/
+.motocross-item p {
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+/* Changes the font sixe of the product title of suvs and motocrosses */
+.motocross-item h3, .suv-item h3 {
+    font-size: xx-large;
+}
+
+/* Changes the box model and font size of all categories */
+.category-item {
+    font-size: 1.7em;
+    padding: 1.2em;
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+/* Changes the height of the images of all categories and puts a black border around them. Also sets the transition delay */
+.category-item > img{
+    width: auto;
+    height: 800px;
+    border: solid black;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+/* Sets the opacity to 0,7 when the mouse hovers over a category image */
+.category-item >  img:hover {
+    opacity: 0.7;
+}
+ 
+/* Sets the transition delay based on the color change */
+.category-item h2,li {
+    width: fit-content;
+    transition: color 0.7s;
+    cursor: pointer;
+}
+
+/* Sets the color to be changed after hovering over the h2 and li items */
+.category-item h2:hover,li:hover {
+    color: #0A1828;
+}
+
+/* Removes the text decoration and default link color */
+.category-item a:link, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+   
+}
+
+/* Changes image dimensions, margin and border radius of motocross images  */
+.motocross-item > img {
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
+    margin: 0.6em;
+}
+
+/* Changes the font size of the name of the developers */
+.dev-desc > h3 {
+    font-size: 2.5em;
+}
+
+/* Changes the font size of the description of the developers */
+.dev-desc > p {
+    font-size: 1.5em;
+}
+
+/* makes the bullets in the list of images dissapear */
+.payment-methods > ul, .social-media > ul, .category-item > ul {
+    list-style-type: none;
+}
+
+/* Overwrites the inherited property where the cursor was a pointer */
+.payment-methods li {
+    cursor: auto;
+}
+
+
+/* Changes the box model and background color of the section of each developer */
+.dev-desc {
+    padding: 3em;
+    border: solid rgb(4, 99, 4);
+    margin: 5em;
+    background-color:rgb(16, 16, 39);
+    font-family: sans-serif;
+    box-shadow: 5px 5px 10px 10px greenyellow ;
+    color: #869ba9;
+}
+
+/* Puts a black border around the image of each developer */
+.dev-desc >  img {
+    border: solid black;
+    float: left;
+    margin-right: 5em;
+    margin-bottom: 2em;
+}
+
+/* Sets the height and right margin of the email image */
+.dev-desc address img {
+    height: 50px;
+    margin-right: 0.5em;
+}
+
+
+/* Sets the font size for the emial link */
+.dev-desc a {
+    font-size: 1.7em;
+}
+
+/* Sets the color when the mouse hovers over the email link */
+.dev-desc a:hover {
+    color: chocolate;
+}
+
+/* Sets the color for the heading and makes the heading stay on the left side even though the image has a float:left property */
+.dev-desc h3 {
+    color: goldenrod;
+    clear: left;
+}
+
+/* Sets the paragraph text font size */
+.dev-desc p {
+    font-size: 30px;
+}
+
+
+/* Sets an animetion when the mouse hovers over the email image */
+.dev-desc address img:hover {
+    animation: shake 0.3s linear;
+}
+
+/* Sets up the shake animation */
+@keyframes shake {
+    33%{
+        transform: rotate(10deg);
+    }
+
+    66%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+/* Changes the background color of the certain category */
+#category-1 {
+    background-color: #005B41;
+}
+
+/* Changes the background color of the certain category */
+#category-2 {
+    background-color: #008170;
+}
+
+/* Changes the background color of the certain category */
+#category-3 {
+    background-color:#183D3D ;
+}
+
+/* Changes the background color of the certain category */
+#category-4 {
+    background-color: #5C8374;
+}
+
+/* Changes the background color of the certain category */
+#category-5 {
+    background-color:#93B1A6;
+}
+
+/* Changes the background color of the certain category */
+#category-6 {
+    background-color: #232D3F;
+}
+
+#about-us {
+    background-color: #0A1828 ;
+}
+
+/* Sets up the container padding */
+.container {
+    padding: 2rem;
+}
+
+/* Sets up the slider wrapper position, margin and max width */
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+/* Sets up the slider properties that contain the slides. Specifically it sets up a shadow and the scrolling behavior and type. Also rounds the images edges */
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+/* Make the slider images fit the slider wrapper */
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+/* Sets up the slider nav dots position */
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left:50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+/* Sets up the dot links color, opacity, transition when hovered over and size */
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+/* Sets up the opacity when the mouse hovers over the dots */
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* Sets the style for the ad*/
+.motocross-item p:nth-of-type(4), .suv-item p:nth-of-type(4) {
+    color: gray;
+}
+
+/* Sets the position an margin of the athens-rentals title*/
+#athens-rentals {
+    margin: 0.8em;
+    display: inline;
+    bottom: 0.3em;
+    position: relative;
+}
+
+/* Sets the background color of the index and contact us pages */
+#index-main,#contact-us {
+    background-color: var(--dark_blue);
+}
+
+
+/*------------------------------------------------------------- Vasilis Stagakis CSS rules ------------------------------------------------------------------------------------*/
+
+/* Header Style */
+header {
+    border-radius: 20px;
+    background-color: #0F0F0F;
+    height: 200px;
+}
+
+/* Navbar dimensions inside header container */
+nav {
+    background-color: white;
+    width:95%;
+    border-radius: 20px;
+}
+
+/* Nav logo container style */
+.nav_logo {
+    background-color: #005B41;
+    border-radius: 20px;
+}
+
+/* Style the link behavior at varius states */
+.nav_logo a , .nav_logo a:hover,.nav_logo a:visited,.nav_logo a:active{
+    color: white;
+    text-decoration: none;
+    font-size:xx-large;
+}
+
+/* */
+.nav_logo a img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Nav Menu container style */
+.nav_menu {
+    background-color: #005B41;
+    border-radius: 20px;
+}
+
+/* */
+.nav_menu a {
+    text-decoration: none;
+    background-color: #0F0F0F;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    border:0;
+    font-size: x-large;
+    transition: background-color 0.2s ease;
+}
+
+/* */
+.nav_menu a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #005B41;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0;
+    font-size: x-large;
+}
+
+/* Adjusts margin of section*/
+#welcome-main {
+    margin:3em
+}
+
+/* welcome main container h2,h4 style */
+#welcome-main h2 , #welcome-main h4{
+    color: white;
+}
+
+/* Adjusts heading font size and alignment*/
+#welcome-main h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Adjusts heading font size*/
+
+#welcome-main h4 {
+    font-size: 2em;
+}
+
+/* welcome main container paragraph style */
+#welcome-main p{
+    background-color: #008170;
+    color: white;
+    border-radius: 20px;
+    font-size: 2em;
+    padding: 1.5em;
+}
+
+/* welcome main container img style */
+#welcome-main img{
+    width: 600px;
+    height: auto    ;
+}
+/* Sets the margin for the form*/
+#contact-main {
+    margin: 4em;
+}
+
+/* contact main container h2style */
+#contact-main h2{
+    color: white;
+    font-size: 3em;
+}
+
+/* contact main container form style */
+#contact-main fieldset{
+    background-color: #008170;
+    color: white;
+    width: 500px;
+    border: white 2px solid;
+}
+
+/* contact main container form legend style */
+#contact-main form legend{
+    background-color: #008170;
+    padding:10px;
+    border: white 2px solid;
+}
+
+/* contact main container form input style */
+#contact-main form input{
+    margin:20px;
+}
+
+/* contact main container img style */
+#contact-main img{
+    width:300px;
+}
+
+/* suv-123-details backnav container style*/
+#suv-123-details-backnav{
+    background-color: #005B41;
+    color: white;
+    border-radius: 20px;
+    width:300px;
+}
+
+/* suv-123-details backnav a style*/
+#suv-123-details-backnav a,#suv-123-details-backnav a:hover,#suv-123-details-backnav a:visited,#suv-123-details-backnav a:active{
+    text-decoration:underline;
+    color: white;
+}
+
+/* suv-123-details main container style*/
+#suv-123-details-main{
+    background-color: #0F0F0F;
+}
+
+/* suv-123-details main container img style*/
+#suv-123-details-main img{
+    width:1000px;
+}
+
+/* suv-123-details specs container style*/
+#suv-123-details-specs{
+    
+}
+
+/* suv-123-details vehicle info container style*/
+#suv-123-details-vehicle-info{
+    
+}
+
+/* suv-123-details ad info container style*/
+#suv-123-details-ad-info{
+    
+}
+
+/* suv-123-details ad owner container style*/
+#suv-123-details-owner-info{
+    
+}
+
+/* carousel container style(image gallery)*/
+.carousel{
+    
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/

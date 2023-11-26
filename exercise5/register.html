@@ -1,0 +1,271 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Registration page where one can create a new account">
+        <meta name="keywords" content="register,form, account">
+        <meta name="author" content="Komnas Kafasis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/logos/business-logo.jpg">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Register</title>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- Website Navigation -->
+            <nav>
+                <!-- Website Logo -->
+                <div class="nav_logo">
+                    <a href="index.html"><img src="../exercise5/images/logo/logo.png" alt="website logo"></a>
+                    <a href="index.html"><span id="athens-rentals">AthensRentals.gr</span></a>
+                </div>
+                <!-- Navigation Menu -->
+                <div class="nav_menu">
+                    <a href="index.html" >Home</a>
+                    <a href="categories.html" >Categories</a>
+                    <a href="about.html" >About Us</a>
+                    <a href="contact.html" >Contact</a>
+                    <a href="register.html" >Register</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="register-main">
+
+            <h2 id="registration">Registration</h2>
+
+            <form action="#" id="registration-form">
+                
+                <h2>Personal Details</h2>
+                <label for="username">Username</label>
+                <input
+                type="text"
+                id="username"
+                name="username"
+                pattern=".{3,}"
+                title="Three or more characters."
+                autocomplete="family-name"
+                required
+                />
+                <label for="password">Password</label>
+                <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+                title="Must contain at least one number, one uppercase and lowercase letter, and at least 5 or more characters."
+                />
+                <label for="repeat--password">Repeat Password</label>
+                <input
+                type="password"
+                id="repeat--password"
+                name="repeat--password"
+                required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+                title="Must contain at least one number, one uppercase and lowercase letter, and at least 5 or more characters."
+                />
+                <label for="fname">First Name</label>
+                <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="ex. John"
+                title="First name has to start with a letter."
+                autocomplete="given-name"
+                required
+                /><br />
+                <label for="lname">Last Name</label>
+                <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="ex. Doe"
+                title="Last name has to start with a letter."
+                autocomplete="family-name"
+                required
+                /><br />
+                <label for="email">Email</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ex. johndoe@gmail.com"
+                required
+                /><br />
+                <label for="email">Address</label>
+                <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="ex. Sesame Street 1,12354,Athens,Greece"
+                required
+                /><br />
+                <label for="email">Date of Birth</label>
+                <input
+                type="date"
+                id="date--of--birth"
+                name="date--of--birth"
+                required
+                />
+                <br />
+                <label for="phone">Phone Number</label>
+                <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="ex. 6901234567"
+                pattern="^[0-9].*\d{4,}"
+                title="Phone number should only contain numbers."
+                required
+                autocomplete="mobile"
+                /><br />
+                <label for="phone">Phone Number #2</label>
+                <input
+                type="tel"
+                id="second--phone"
+                name="phone"
+                placeholder="ex. 6901234567"
+                pattern="^[0-9].*\d{4,}"
+                title="Phone number should only contain numbers."
+                autocomplete="mobile"
+                />
+
+                <h2>How would you like to be notified?</h2>
+                
+                <label for="sms--notification">SMS</label>
+                <input type="checkbox" id="sms--notification" name="sms"/>
+            
+                <label for="email--notification">Email</label>
+                <input type="checkbox" id="email--notification" name="email"/>
+            
+                <label for="viber--notification">Viber</label>
+                <input type="checkbox" id="viber--notification" name="viber"/>
+        
+                <label for="whatsapp--notification">WhatsApp</label>
+                <input type="checkbox" id="whatsapp--notification"name="whatsapp"/>
+
+
+                <h2>Questionnaire</h2>
+                <label for="frequency--question--input">
+                    How often do you shop online?<br>
+                </label>
+                <input list="frequency--question" id="frequency--question--input"/>
+                <datalist id="frequency--question">
+                    <option value="Less than once a month"></option>
+                    <option value="1-2 times a month"></option>
+                    <option value="3-4 times a month"></option>
+                    <option value="More than 5 times a month"></option>
+                </datalist>
+                <br>
+
+                <label for="variety--question--input">
+                    What kind of products do you usually shop for? <br>
+                </label>
+                <input list="variety--question" id="variety--question--input"/>
+                <datalist id="variety--question">
+                    <option value="Technology products"></option>
+                    <option value="Clothes/Fashion"></option>
+                    <option value="Household items"></option>
+                    <option value="Food/beverages"></option>
+                </datalist>
+                <br>
+
+
+                <label for="payment--question--input">
+                    How do you usually pay? <br>
+                </label>
+                <input list="payment--question" id="payment--question--input"/>
+                <datalist id="payment--question">
+                    <option value="Credit/debit card"></option>
+                    <option value="Mobile payment (Apple Pay/G Pay)"></option>
+                    <option value="Paypal"></option>
+                    <option value="Cash on delivery"></option>
+                </datalist>
+                <br>
+
+
+                <label for="how--did--they--find--us--question--input">
+                    How did you find our website? <br>
+                </label>
+                <input list="how--did--they--find--us--question" id="how--did--they--find--us--question--input"/>
+                <datalist id="how--did--they--find--us--question">
+                    <option value="Google"></option>
+                    <option value="Suggested by someone"></option>
+                    <option value="Saw an ad of our website"></option>
+                </datalist>
+                <br>
+
+
+                <label for="visit--question--input">
+                    How often do you visit our website? <br>
+                </label>
+                <input list="visit--question" id="visit--question--input"/>
+                <datalist id="visit--question">
+                    <option value="Less than once a month"></option>
+                    <option value="1-2 times a month"></option>
+                    <option value="3-4 times a month"></option>
+                    <option value="More than 5 times a month"></option>
+                </datalist>
+
+                <input type="submit" form="registration--form" value="Submit" id="registration-submit-btn"/>
+
+            </form>
+
+
+
+        </main>
+
+        <footer>
+
+            <div class="footer-container">
+                <!-- Social media-->
+                <section class="social-media">
+                    <h3>Follow us</h3>
+                    
+                    <div id="social-1">
+                        <a href="https://www.facebook.com/"><img src="images/logos/facebook-logo.png" alt="Facebook logo"></a>
+                    </div>
+                    <div id="social-2">
+                        <a href="https://www.instagram.com/"><img src="images/logos/instagram-logo.png" alt="Instagram logo"></a>
+                    </div>
+                    <div id="social-3">
+                        <a href="https://twitter.com/"><img src="images/logos/twitter-logo.png" alt="Twitter logo"></a>
+                    </div>
+                    
+                </section>
+        
+                <!-- Payment methods-->
+                <section class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    
+                        <div id="payment-1">
+                            <img src="images/logos/visa.svg" alt="Visa Logo">
+                        </div>
+                        <div id="payment-2">
+                            <img src="images/logos/mastercard.svg" alt="Mastercard logo">
+                        </div>
+                        <div id="payment-3">
+                            <img src="images/logos/applepay.svg" alt="Apple Pay logo">
+                        </div>
+                        <div id="payment-4">
+                            <img src="images/logos/paypal.svg" alt="Paypal logo">
+                        </div>
+                </section>
+        
+                <!-- Contacts Us-->
+                <section class="contact-details">
+                    <h3>Contact Deatails</h3>
+                    <address class="adress-flex-container">
+                        <a href="mailto:p3190081@aueb.gr"><img src="images/logos/email.png" alt="email logo"></a>
+                        <a href="mailto:p3190081@aueb.gr">p3190081@aueb.gr</a>
+                    </address>
+                </section>
+                </div>
+            
+            <h3 class="copyright">©2023 Athens Rentals | All rights reserved</h3>
+        </footer>
+
+    </body>
+    
