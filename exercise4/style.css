@@ -576,6 +576,8 @@ img {
 /* For phones*/
 @media screen and (max-width:425px) {
 
+    /*GENERAL*/
+
     html {
         width: 100%;
     }
@@ -584,6 +586,14 @@ img {
         grid-template-columns: auto;
         height: 100%;
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* ABOUT US*/
 
     .dev-desc {
         font-size: 0.5em;
@@ -614,6 +624,7 @@ img {
         font-size: 0.7em;
     }
 
+    /* FOOTER */
     footer img {
         object-fit: contain;
     }
@@ -672,12 +683,6 @@ img {
 
     footer {
         height: 120%;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .adress-flex-container{
@@ -740,6 +745,8 @@ img {
 /* For tablets */
 
 @media screen and (max-width:850px) {
+
+    /*GENERAL*/
     
     body {
         grid-template-rows: auto auto;
@@ -749,7 +756,7 @@ img {
     html {
         width: 100%;
     }
-
+     /* ABOUT US*/
     .dev-desc {
         font-size: 0.5em;
         display: flex;
@@ -766,6 +773,12 @@ img {
         margin: 0.2em;
     }
 
+    .dev-email img{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+
     .dev-desc p {
         font-size: 2.5em;
         clear: left;
@@ -778,6 +791,8 @@ img {
     #about-us {
         font-size: 0.7em;
     }
+
+    /* FOOTER*/
 
     footer {
         font-size: 0.7em;
@@ -801,8 +816,6 @@ img {
         height: 25px;
         margin-right: 0;
     }
-
-
 
     .social-media {
         margin: 1.5em;
@@ -848,12 +861,6 @@ img {
         max-width: none;
         width: 30px;
         height: 30px;
-    }
-
-    .dev-email img{
-        width: 50%;
-        height: 50%;
-        object-fit: contain;
     }
 
     /* Product list pages*/
