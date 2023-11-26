@@ -103,10 +103,13 @@ img {
 
 /* Changes the margin of the social media section */
 .social-media {
-    margin: 2em;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 40px);;
+    grid-template-rows: 1fr 30px ;
+    column-gap: 15px;
+    row-gap: 0px;
+    justify-content: center;
+    margin: 1em;
 }
 
 /* Adjust the item position in the grid*/
@@ -162,13 +165,23 @@ img {
     color:chocolate;
 }
 
+/* Removes underline */
+.contact-details a:nth-child(2n) {
+    text-decoration: none;
+}
+
+
+
 /* Changes the margin of the payment methods section */
 .payment-methods {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(4, 40px);;
+    grid-template-rows: 1fr 30px ;
     margin: 2em;
-    justify-content: space-evenly;
+    column-gap: 15px;
+    row-gap: 0px;
+    justify-content: center;
+    
 }
 
 /* Adjust the item position in the grid*/
@@ -275,12 +288,15 @@ img {
     font-family: sans-serif;
     color: white;
     border: solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: c;
 }
 
 
 /* Changes the height of the images of all categories and puts a black border around them. Also sets the transition delay */
 .category-item > img{
-    width: auto;
+    width: 650px;
     height: 800px;
     border: solid black;
     transition: 0.7s;
@@ -353,6 +369,8 @@ img {
     float: left;
     margin-right: 5em;
     margin-bottom: 2em;
+    max-width: 15rem;
+    object-fit:cover;
 }
 
 /* Sets the height and right margin of the email image */
@@ -543,6 +561,7 @@ img {
     grid-template-rows: auto auto auto;
     width: 100%;
     height: 100%;
+    justify-items: center;
 }
 
 
@@ -554,7 +573,7 @@ img {
 
 /* Media Queries*/
 
-/* For phoens*/
+/* For phones*/
 @media screen and (max-width:425px) {
 
     html {
@@ -568,6 +587,8 @@ img {
 
     .dev-desc {
         font-size: 0.5em;
+        display: flex;
+        flex-direction: column;
     }
 
     .dev-desc a {
@@ -576,14 +597,182 @@ img {
 
     .dev-desc p {
         font-size: 2.5em;
+        clear: left;
+    }
+
+    .dev-desc img {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
     }
 
     .dev-desc h3 {
         font-size: x-large;
     }
 
+    #about-us {
+        font-size: 0.7em;
+    }
+
+    footer img {
+        object-fit: contain;
+    }
+
+    #social-1 img, #social-2 img, #social-3 img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        display: inline;
+    }
+
+    .social-media {
+        margin: 1.5em;
+        column-gap: 1px;
+        grid-template-columns: repeat(3, 30px);;
+        grid-template-rows: 1fr 35px;
+    }
+
+    .footer-container {
+        font-size: 0.8em;
+        gap: 3px;
+    }
+    
+    .copyright {
+        font-size: 0.7em;
+    }
+
+    .payment-methods {
+        grid-template-columns: repeat(4, 25px);;
+        grid-template-rows: 1fr 20px ;
+        margin: 0;
+        column-gap: 0px;
+        row-gap: 10px;
+    }
+
+    #payment-1, #payment-2, #payment-3, #payment-4 {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+    }
+
+    #payment-1 img, #payment-2 img, #payment-3 img, #payment-4 img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        display: block;
+    }
+    .contact-details{
+        margin: 2.5em;
+        grid-template-columns: repeat(1, 40px);;
+        grid-template-rows: 15px ;
+        justify-items: center;
+        align-items: center;
+        gap: 2.5em;
+    }
+
     footer {
-        font-size: .5em;
+        height: 120%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .adress-flex-container{
+        font-size: 0.9em;
+    }
+
+    .adress-flex-container img {
+        display: none;
+    }
+
+
+    /* Product list pages*/
+
+    .products-list {
+        padding: 0.1em;
+    }
+
+    .motocross-item, .suv-item {
+        font-size: 0.5em;
+    }
+
+    .motocross-item h3, .suv-item h3 {
+        font-size:x-small;
+    }
+
+    .motocross-item >button , .suv-item > button {
+        font-size: 1em;
+        padding: 5px 10px;
+        box-shadow: 0 5px #999;
+    }
+
+    .motocross-item > button:active,.suv-item > button:active {
+        box-shadow: 0 3px #666;
+        transform: translateY(2px);
+    }
+
+    .slider-nav a{
+        width: 0.1em;
+        height: 0.1em;
+    }
+
+    .slider-nav {
+        bottom: 1em;
+        column-gap: 0.7em;
+    }
+
+    .container{
+        margin: 0.1em;
+    }
+
+
+    
+
+
+
+    
+}
+
+
+/* For tablets */
+
+@media screen and (max-width:850px) {
+    
+    body {
+        grid-template-rows: auto auto;
+        height: 100%;
+    }
+
+    html {
+        width: 100%;
+    }
+
+    .dev-desc {
+        font-size: 0.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dev-desc a {
+        font-size: 2em;
+    }
+
+    .dev-desc img {
+        margin: 0 auto;
+        width: 80%;
+        margin: 0.2em;
+    }
+
+    .dev-desc p {
+        font-size: 2.5em;
+        clear: left;
+    }
+
+    .dev-desc h3 {
+        font-size: x-large;
     }
 
     #about-us {
@@ -591,16 +780,118 @@ img {
     }
 
     footer {
+        font-size: 0.7em;
+    }
+
+    footer img {
+        width: 70%;
+        object-fit: contain;
+    }
+
+    .footer-container {
+        gap: 2em;
+    }
+
+    #social-1 img, #social-2 img, #social-3 img {
+        width: 50%; 
+    }
+
+    #social-1, #social-2, #social-3 {
+        width: 25px;
+        height: 25px;
+        margin-right: 0;
+    }
+
+
+
+    .social-media {
+        margin: 1.5em;
+        column-gap: 1px;
+        grid-template-columns: repeat(3, 25px);;
+        grid-template-rows: 1fr 25px;
+    }
+
+    #payment-1, #payment-2, #payment-3, #payment-4 {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+    }
+
+    #payment-1 img, #payment-2 img, #payment-3 img, #payment-4 img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .payment-methods {
+        grid-template-columns: repeat(4, 25px);;
+        grid-template-rows: 1fr 20px ;
+        margin: 0;
+        column-gap: 0px;
+        row-gap: 10px;
+    }
+    .contact-details{
+        margin: 2.5em;
+        
+        grid-template-rows: 15px ;
+        justify-items: center;
+        align-items: center;
+        gap: 2.5em;
+    }
+
+    .adress-flex-container {
+        grid-row: 2/3;
+    }
+
+    .adress-flex-container img {
+        max-width: none;
+        width: 30px;
+        height: 30px;
+    }
+
+    .dev-email img{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+
+    /* Product list pages*/
+
+    .products-list {
+        padding: 0.1em;
+    }
+
+    .motocross-item, .suv-item {
         font-size: 0.8em;
     }
-}
 
+    .motocross-item h3, .suv-item h3 {
+        font-size:medium;
+    }
 
-/* For tablets */
+    .motocross-item >button , .suv-item > button {
+        font-size: 1em;
+        padding: 5px 10px;
+        box-shadow: 0 5px #999;
+    }
 
-@media screen and (max-width:750px) {
-    
-    body {
-        grid-template-rows: auto auto;
+    .motocross-item > button:active,.suv-item > button:active {
+        box-shadow: 0 3px #666;
+        transform: translateY(2px);
+    }
+
+    .slider-nav a{
+        width: 10px;
+        height: 10px;
+    }
+
+    .slider-nav {
+        bottom: 1em;
+        column-gap: 0.7em;
+    }
+
+    .container{
+        margin: 0.1em;
     }
 }

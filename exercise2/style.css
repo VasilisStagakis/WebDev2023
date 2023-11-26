@@ -1,5 +1,12 @@
 /*------------------------------------------------------------- Common CSS rules ------------------------------------------------------------------------------------*/
 
+/* Saves some colors into variables*/
+:root {
+    --dark_blue: #0A1828;
+    --blue-purple:rgb(16, 16, 39);
+}
+
+
 /* Sets the background color and text color of the footer. Also positions the footer at the bottom and makes it cover all the page width */
 footer {
     color:white;
@@ -29,7 +36,7 @@ html {
 /* Changes the padding for suv and motocross main element */
 .products-list {
     padding: 3em;
-    background-color: whitesmoke;
+    background-color: var(--dark_blue);
 }
 
 /* Aligns the copyright text to the center*/
