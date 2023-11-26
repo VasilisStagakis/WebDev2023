@@ -290,7 +290,6 @@ img {
     border: solid gray;
     display: flex;
     flex-direction: column;
-    justify-content: c;
 }
 
 
@@ -301,6 +300,7 @@ img {
     border: solid black;
     transition: 0.7s;
     cursor: pointer;
+    object-fit: cover;
 }
 
 /* Sets the opacity to 0,7 when the mouse hovers over a category image */
@@ -574,7 +574,7 @@ img {
 /* Media Queries*/
 
 /* For phones*/
-@media screen and (max-width:425px) {
+@media screen and (max-width:455px) {
 
     /*GENERAL*/
 
@@ -733,11 +733,16 @@ img {
         margin: 0.1em;
     }
 
+    /* Categories page*/
 
-    
+    .categories-container {
+        display: flex;
+        flex-direction: column;
+    }
 
-
-
+    .category-item {
+        font-size: 0.8em;
+    }
     
 }
 
@@ -900,5 +905,16 @@ img {
 
     .container{
         margin: 0.1em;
+    }
+
+    /* Categories page*/
+
+    .categories-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .category-item {
+        font-size: 1em;
     }
 }
